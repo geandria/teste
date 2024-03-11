@@ -1,0 +1,54 @@
+<h2>Orçamento</h2>
+        <form method="get" action="">
+            <fieldset>
+                <legend>Dados da Viagem</legend>
+                <label>Nome</label><br>
+                <input type="text" name="nome"><br><br>
+
+                <label>Email</label><br>
+                <input type="email" required name="email"><br><br>
+
+             </fieldset>
+
+             <fieldset>
+                 <legend>Quais serviços deseja contratar?</legend>
+                 <label>
+                     <br><input type="checkbox" name="passagens" value="Passagens">Compra de Passagens  
+                 </label>
+                 <label>
+                     <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de Hospedagem
+                 </label>
+                 <label>
+                     <br><input type="checkbox" name="veiculos" value="Veiculos">Aluguel de Veiculos
+                 </label>
+             </fieldset>
+
+             <fieldset>
+                 <legend>Escolha a Forma de Pagamento</legend>
+                 <label>
+                     <br><input type="radio" name="formaPagamento" value="Cartão de Crédito">Cartão de Crédito
+                 </label>
+                 <label>
+                     <br><input type="radio" name="formaPagamento" value="Boleto">Boleto 
+                 </label>
+                 <label>
+                     <br><input type="radio" name="formaPagamento" value="Pix">Pix
+                 </label>
+             </fieldset>
+
+             <fieldset>
+                  <legend>Escolha o Prazo para o pagamento</legend>
+                 <select name="prazoPagamento">
+                     <option value="aVista" selected>Á vista</option>
+                     <option value="5x">5x sem juros</option>
+                     <option value="10x">10x com juros</option>
+                 </select>
+             </fieldset>
+             
+             <fieldset>
+                 <label>Comentario</label><br>
+                     <textarea rows="5" name="comentario"></textarea><br><br>
+                 <label>
+                     <input type="submit" value="Enviar" />
+                 </label>
+            </fieldset>
